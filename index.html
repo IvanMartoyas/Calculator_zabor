@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style_tab.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/js/range_component/range-style.css" />
+    <link rel="stylesheet" href="./assets/js/colors/colors-style.css">
+
+    <style>
+        /* временно */
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="tabs-wrapper" class="tabs__block">
+            <div class="tabMenu__button"></div>
+            <div class="tabs tabMenu">
+                <span class="tab tabMenu__item">Общие параметры</span>
+                <span class="tab tabMenu__item">Размер панели</span>
+                <span class="tab tabMenu__item">Вариант исполнения столба</span>
+                <span class="tab tabMenu__item">Дополнительные элементы на ограждение</span>
+                <span class="tab tabMenu__item">Калитки</span>
+                <span class="tab tabMenu__item">Ворота</span>
+                <span class="tab tabMenu__item">Общий вид ограждения</span>
+            </div>
+            <div class="tabs-content tabContent">
+                <div class="tab-item tabContent__item">
+                    <div class="calc__row calc__localRow">
+                        <div id="size_perimetr" class="border-right calc__rowItem">
+                            <div class="calc__top calc__row">
+                                <div class="calc__title"></div>
+                                <input type="number" class="calc__fild"></input>
+                            </div>
+                            <div class="calc__content">
+                                <div class="size_perimetr range">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="height_fance" class="calc__rowItem">
+                            
+                            <div class="calc__top calc__row">
+                                <div class="calc__title"></div>
+                                <input type="number" class="calc__fild"></input>
+                            </div>
+                            <div class="calc__content">
+                                <input type="range" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="general_parameters_colors"></div>
+                
+                    <div class="statistic__row statistic">
+                        <div class="statistic__colom">
+                            <div class="statistic__title">Параметры</div>
+                            <div class="statistic__params">
+                                <div class="statistic__param">
+                                    <span class="statistic__paramTitle">Длина периметра:</span>
+                                    <span class="statistic__paramDot"> </span>
+                                    <span class="statistic__paramValue" id="statistic_size_preimetr"></span>
+                                </div>
+                                <div class="statistic__param">
+                                    <span class="statistic__paramTitle">Высота:</span>
+                                    <span class="statistic__paramDot"> </span>
+                                    <span class="statistic__paramValue" id="statistic_height_fance"></span>
+                                </div>
+                                <div class="statistic__param">
+                                    <span class="statistic__paramTitle">Цвет:</span>
+                                    <span class="statistic__paramDot"> </span>
+                                    <span class="statistic__paramValue--color" id="statistic_color_fance"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistic__colom">
+                            <div class="statistic__title">Стоимость</div>
+                            <div class="statistic__values">
+                                <div class="statistic__valuesRow">
+                                    <div class="statistic__valuesTitle">Вес изделия:</div>
+                                    <div class="statistic__paramDot"></div>
+                                    <div class="statistic__value"><span>от 1 709,44 кг.</span></div>
+                                </div>
+                                <div class="statistic__valuesRow">
+                                    <div class="statistic__valuesTitle">Цена панели:</div>
+                                    <div class="statistic__paramDot"></div>
+                                    <div class="statistic__value"><span>2 007 р</span>.</div>
+                                </div>
+                                <div class="statistic__valuesRow">
+                                    <div class="statistic__valuesTitle">Цена изделия:</div>
+                                    <div class="statistic__paramDot"></div>
+                                    <div class="statistic__value"><span>от 393 586 р.</span></div>
+                                </div>
+                                
+                                
+            
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+                <div class="tab-item tabContent__item">Содержимое 2
+                    <div class="range_vertical">
+                    </div>
+                </div>
+                <div class="tab-item tabContent__item">Содержимое 3</div>
+                <div class="tab-item tabContent__item">Содержимое 4</div>
+                <div class="tab-item tabContent__item">Содержимое 5</div>
+                <div class="tab-item tabContent__item">Содержимое 6</div>
+                <div class="tab-item tabContent__item">Содержимое 7</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./assets/js/tab.js"></script>
+    
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/range_component/range.js"></script>
+    <script src="./assets/js/colors/color.js"></script>
+    <script src="./assets/js/calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* colors picker start */
+.colors {
+    justify-content: flex-start!important;
+  }
+  .colors__selected {
+ 
+  }
+  .colors__selectItem {
+    align-items: center;
+  }
+  .colors__select {
+    border: 3px solid #0b2842;
+      border-radius: 50px;
+      width: 62px;
+      height: 62px;
+      margin-right: 15px;
+      background: var(--tiker);
+  }
+  .colors__value {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .colors__items {
+    display: flex;
+    max-width: 230px;
+    justify-content: flex-start;
+  }
+  .colors__item {
+      width: 31px;
+      height: 31px;
+      border-radius: 25px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+  }
+  .colors__item:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
+  .colors__selectItem {
+    justify-content: flex-start!important;
+  }
+  /* colors picker end */

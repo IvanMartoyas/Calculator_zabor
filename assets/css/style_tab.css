@@ -1,0 +1,106 @@
+.tabs__block {
+    --accent1: #006f3e;
+    --accent2: #212529;
+    --accent3: #f5f6f6;
+    --accent4: #f2f2f2;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    position: relative;
+}
+.menu_tab {
+    display: block;
+    background: var(--accent3);
+}
+.tabMenu__item {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+    color: var(--accent2);
+    background: var(--accent3);
+}
+.tabMenu__item:hover {
+    background: var(--accent1);
+    color: var(--accent4);
+}
+.tabMenu__item.active {
+    background: var(--accent1);
+    color: var(--accent4);
+} 
+.tabContent__item {
+    font-size: 18px;
+}
+.tabs-content {
+    border: 2px solid var(--accent1);
+    /* padding: 1rem; */
+}
+.tab-item {
+
+}
+/* adaptive */
+.tabMenu__button { 
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 7777;
+    left: 1rem;
+    top: 1rem;
+    padding: 1rem;
+
+    color: var(--accent3);
+    width: max-content;
+    border-radius: 8px;
+    border: 1px solid var(--accent3);
+    transition: .7s;
+    background: url(../img/menu-bar.png), var(--accent1);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tabMenu__button--active {
+    left: 260px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .tabs__block {
+        display: block;
+        max-width: 900px;
+    }
+    .tabContent {
+        padding-top: 2rem;
+    }
+    .tabMenu {
+        width: 0px;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: .7s;
+        z-index: 7776;
+        border: 1px solid var(--accent2);
+    }
+    .tabMenu span {
+        width: 320px;
+    }
+    .tabMenu--active {
+        width: 320px;
+    }
+    .tabMenu__button {
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .calc__row {
+        flex-wrap: wrap;
+    }
+    .border-right {
+        border: 0!important;
+    }
+}
